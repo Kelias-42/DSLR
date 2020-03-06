@@ -3,27 +3,31 @@ import numpy as np
 import describe
 
 houses={
-		"Ravenclaw": 1,
-		"Slytherin": 2,
-		"Gryffindor": 3,
-		"Hufflepuff": 4
-		}
+	"Ravenclaw": 1,
+	"Slytherin": 2,
+	"Gryffindor": 3,
+	"Hufflepuff": 4
+}
 
-def plot_hist(data):
-	for i in range(1, 4):
-		sorted_data = []	
+def plot_hist(data, col):
+	plt.title(data.columns[col])
+	data = data.to_numpy()
+	for i in range(1, 5):
+		curr_house = []	
 		for row in data:
-			if row[1] == i and not np.isnan(row[12]):
-				sorted_data.append(row[12])
-		plt.hist(sorted_data, alpha=0.5)
+			if row[1] == i and not np.isnan(row[col]):
+				curr_house.append(row[col])
+		plt.hist(curr_house, alpha=0.5)
 
 def main():
 	np.set_printoptions(suppress=True)
 	data = describe.get_data()
 	data["Hogwarts House"].replace(houses, inplace=True)
 	data = data.select_dtypes('number')
-	data = data.to_numpy()
-	plot_hist(data)
+	metrics = describe.describe(data.to_numpy())
+	metrics = metrics.tolist()
+	col = metrics[2].index(min(metrics[2]))
+	plot_hist(data, col)
 
 if __name__ == "__main__":
 	main()
