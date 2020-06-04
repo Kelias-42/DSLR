@@ -100,4 +100,4 @@ $> python scatter_plot.py "./resources/dataset_train.csv"
 # Credit
 This project was made by:
 * Julien Dumay (https://github.com/ChokMania) 
-* myself, Aleksi Gautier (https://github.com/Kelias-42).
+* myself, Aleksi Gautier (https://github.com/Kelias-42)
