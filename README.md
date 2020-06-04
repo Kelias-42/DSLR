@@ -92,10 +92,12 @@ $> python histogram.py "./resources/dataset_train.csv"
 Displays a scatter plot answering the question:
 
 What are the two features that are similar?
-```shell
+```
 $> python scatter_plot.py "./resources/dataset_train.csv"
 ```
 >This will open a new window containing the scatter plot
 
 # Credit
-This project was made by Julien Dumay (https://github.com/ChokMania) and myself, Aleksi Gautier (https://github.com/Kelias-42).
+This project was made by:
+* Julien Dumay (https://github.com/ChokMania) 
+* myself, Aleksi Gautier (https://github.com/Kelias-42).
