@@ -18,11 +18,11 @@ There are many executable programs in this repository, here is what they do and 
 
 ### logreg_train
 Trains the classification model
-'''shell
+```shell
 $> python3 logreg_train.py -h</code>
 usage: logreg_train.py [-h] [-v] [-vi House N_feature1 N_feature2] dataset
-
-Trains our model with the specified dataset
+```
+Trains the model with the specified dataset
 
 positional arguments:
   dataset: dataset, needs to be a csv
@@ -34,7 +34,7 @@ optional arguments:
 
 $> python3 logreg_train.py "./resources/dataset_train.csv" -vi "Ravenclaw" 1 2
 '''
->This will train the model with the training data
+>This will train the model by computing weights
 
 >Generated weights will be saved in weights.csv
 
