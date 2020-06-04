@@ -19,7 +19,7 @@ There are many executable programs in this repository, here is what they do and 
 ### logreg_train
 Trains the classification model
 ```shell
-$> python3 logreg_train.py -h</code>
+$> python3 logreg_train.py -h
 usage: logreg_train.py [-h] [-v] [-vi House N_feature1 N_feature2] dataset
 
 Trains the model with the specified dataset
