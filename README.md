@@ -8,10 +8,10 @@ In them there are Hogwart students who need to be put in one of the 4 houses acc
 In order to do that, I first familiarized myself with basic data visualization techniques as well as data analysis in order to select the most interesting features.
 
 # Required packages
--Numpy
--Pandas
--Matplotlib
--Seaborn
+* Numpy
+* Pandas
+* Matplotlib
+* Seaborn
 
 # Usage
 There are many executable programs in this repository, here is what they do and how to use them:
@@ -34,7 +34,9 @@ optional arguments:
 <code>python3 logreg_train.py "./resources/dataset_train.csv" -vi "Ravenclaw" 1 2</code>
 </pre>
 >This will train the model with the training data
+
 >Generated weights will be saved in weights.csv
+
 >Adding the -vi option will display a graph on the training session in a "one vs all" format for the specified features and house
 
 ### logreg_predict
@@ -56,5 +58,7 @@ optional arguments:
 <code>python3 logreg_predict.py "./resources/dataset_test.csv" "./weights.csv" -p</code>
 </pre>
 >This will predict a house for each student in the test dataset
+
 >Adding the -p option displays a pie chart of the repartition of each student
+
 >You can also use -a if you are making predictions on the training data to know the rate of correct predictions
