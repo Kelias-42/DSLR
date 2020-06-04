@@ -38,7 +38,7 @@ $> python logreg_train.py "./resources/dataset_train.csv" -vi "Ravenclaw" 1 2
 
 >Generated weights will be saved in weights.csv
 
->Adding the -vi option will display a graph on the training session in a "one vs all" format for the specified features and house
+>Adding the -vi option will display a graph on the training session in a one vs all format for the specified features and house
 
 ### logreg_predict
 Predicts house belonging for a list of students
