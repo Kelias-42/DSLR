@@ -19,7 +19,7 @@ def plot_hist(data, col):
 				curr_house.append(row[col])
 		plt.hist(curr_house, alpha=0.5)
 
-def main():
+if __name__ == "__main__":
 	np.set_printoptions(suppress=True)
 	data = describe.get_data()
 	data["Hogwarts House"].replace(houses, inplace=True)
@@ -28,6 +28,4 @@ def main():
 	metrics = metrics.tolist()
 	col = metrics[2].index(min(metrics[2]))
 	plot_hist(data, col)
-
-if __name__ == "__main__":
-	main()
+	plt.show()

@@ -24,11 +24,9 @@ def scatter_plot(data, col_1, col_2):
 				y.append(row[col_2])
 		plt.scatter(x, y, alpha=0.7, s=9)
 
-def main():
+if __name__ == "__main__":
 	data = describe.get_data()
 	data["Hogwarts House"].replace(houses, inplace=True)
 	data = data.select_dtypes('number')
 	scatter_plot(data, 1, 3)
-	
-if __name__ == "__main__":
-	main()
+	plt.show()

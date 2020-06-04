@@ -61,13 +61,9 @@ def clean_print(columns, data):
 			width = get_width(columns[j], data[:,j])
 			print("{:>{:d}.6f}".format(data[i][j], width + 2), end='')
 
-def main():
+if __name__ == "__main__":
 	np.set_printoptions(suppress=True)
 	data = get_data()
-	print(data.describe(), "\n")
 	data = data.select_dtypes('number')
 	metrics = describe(data.to_numpy())
 	clean_print(data.columns, metrics)
-
-if __name__ == "__main__":
-	main()
