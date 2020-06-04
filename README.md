@@ -66,7 +66,7 @@ $> python logreg_predict.py "./resources/dataset_test.csv" "./weights.csv" -p
 >You can also use -a if you are making predictions on the training data to know the rate of correct predictions
 
 ### describe
-Gives different metrics regarding the dataset given as an argument.
+Gives different metrics of the dataset given as an argument.
 ```
 $> python describe.py "./resources/dataset_train.csv"
 ```
