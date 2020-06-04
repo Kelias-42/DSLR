@@ -18,7 +18,7 @@ There are many executable programs in this repository, here is what they do and 
 
 ### logreg_train
 Trains the classification model
-```shell
+```
 $> python3 logreg_train.py -h
 usage: logreg_train.py [-h] [-v] [-vi House N_feature1 N_feature2] dataset
 
@@ -42,7 +42,7 @@ $> python3 logreg_train.py "./resources/dataset_train.csv" -vi "Ravenclaw" 1 2
 
 ### logreg_predict
 Predicts house belonging for a list of students
-```shell
+```
 $> python3 logreg_predict.py -h
 usage: logreg_predict.py [-h] [-a] [-p] dataset weights
 
@@ -56,9 +56,9 @@ optional arguments:
   -h, --help: show this help message and exit
   -a, --accuracy: show accuracy for dataset_train
   -p, --piechart: print a piechart for the results
-
 $> python3 logreg_predict.py "./resources/dataset_test.csv" "./weights.csv" -p
 ```
+
 >This will predict a house for each student in the test dataset
 
 >Adding the -p option displays a pie chart of the repartition of each student
@@ -67,14 +67,14 @@ $> python3 logreg_predict.py "./resources/dataset_test.csv" "./weights.csv" -p
 
 ### describe
 Gives different metrics regarding the dataset given as an argument
-```shell
-$> python3 describe.py "./resources/dataset_train.csv"</code>
+```
+$> python3 describe.py "./resources/dataset_train.csv"
 ```
 >This will display a description of the training dataset similar to pandas.describe()
 
 ### pair_plot
 Displays a pair_plot of the data using seaborn. Very useful to determine which attributes to keep for the training.
-```shell
+```
 $> python3 pair_plot.py ./resources/dataset_train.csv
 ```
 >This will open a new window containing the pair plot, it may take a while to load considering there's a lot of computation to be done
@@ -83,7 +83,7 @@ $> python3 pair_plot.py ./resources/dataset_train.csv
 Displays a histogram answering the question:
 
 Which Hogwarts course has a homogeneous score distribution beween all four houses?
-```shell
+```
 $> python3 histogram.py "./resources/dataset_train.csv"
 ```
 >This will open a new window containing the histogram
