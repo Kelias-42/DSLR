@@ -5,7 +5,7 @@ A Machine Learning project using Logistic Regression.
 This project's main goal is to solve a classification problem and by doing so, learning about data analysis, data visualization and Machine Learning techniques. 
 I was given a training dataset and a testing dataset which are in the resources folder. 
 In them there are Hogwart students who need to be put in one of 4 houses according to their grades in many different subjects.
-In order to do that, I first familiarized myself with basic data visualization techniques as well as data analysis in order to select the most interesting features. I then made a training program generating weights which will be used by the prediction program to assign students to their House.
+In order to do that, I first familiarized myself with basic data visualization techniques as well as data analysis in order to select the most interesting features. I then made a training program generating weights which will be used by the prediction program to assign students to their house.
 
 # Required packages
 * Numpy
