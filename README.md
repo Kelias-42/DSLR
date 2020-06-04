@@ -17,7 +17,7 @@ In order to do that, I first familiarized myself with basic data visualization t
 There are many executable programs in this repository, here is what they do and how to use them:
 
 ### logreg_train
-Trains the classification model
+Trains the classification model.
 ```
 $> python logreg_train.py -h
 usage: logreg_train.py [-h] [-v] [-vi House N_feature1 N_feature2] dataset
@@ -41,7 +41,7 @@ $> python logreg_train.py "./resources/dataset_train.csv" -vi "Ravenclaw" 1 2
 >Adding the -vi option will display a graph on the training session in a one vs all format for the specified features and house
 
 ### logreg_predict
-Predicts house belonging for a list of students
+Predicts house belonging for a list of students.
 ```
 $> python logreg_predict.py -h
 usage: logreg_predict.py [-h] [-a] [-p] dataset weights
@@ -66,7 +66,7 @@ $> python logreg_predict.py "./resources/dataset_test.csv" "./weights.csv" -p
 >You can also use -a if you are making predictions on the training data to know the rate of correct predictions
 
 ### describe
-Gives different metrics regarding the dataset given as an argument
+Gives different metrics regarding the dataset given as an argument.
 ```
 $> python describe.py "./resources/dataset_train.csv"
 ```
@@ -98,4 +98,4 @@ $> python scatter_plot.py "./resources/dataset_train.csv"
 >This will open a new window containing the scatter plot
 
 # Credit
-This project was made by Julien Dumay (https://github.com/ChokMania) and myself, Aleksi Gautier (https://github.com/Kelias-42)
+This project was made by Julien Dumay (https://github.com/ChokMania) and myself, Aleksi Gautier (https://github.com/Kelias-42).
